@@ -1,0 +1,165 @@
+header.primary{
+	background: $mainBgImage;
+	border-bottom: 1px solid $altBorderColor;
+	width: 100%;
+	z-index: 10;
+
+	@media screen and (min-width: 921px){
+		@include transition;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+
+	.wideWrapper {
+		@media screen and (max-width: 400px){
+			padding: 0;
+			width: 100%;
+		}
+	}
+}
+
+// ============================ //
+// Headroom animation //
+// ============================ //
+
+@media screen and (min-width: 921px){
+	body {
+		margin-top: 165px;
+	}
+
+	.headroom--pinned {
+	    display: block;
+	}
+	.headroom--unpinned {
+	    display: none;
+	}
+
+	.slideDown {
+		-webkit-transform: translateY(0%);
+	    transform: translateY(0%);
+	}
+
+	.headroom--not-top {
+		.logo {
+			width: 165px;
+			height: 89px;
+		}
+
+		.mainMenu {
+			margin-top: 10px;
+		}
+	}
+}
+// ============================ //
+
+
+	#user-tools {
+		font-size: 13px;
+
+		.icon-bag, .icon-head {
+			color: $secondaryColor;
+			padding-right: 6px;
+		}
+
+		@media screen and (min-width: 581px){
+			height: 2em;
+  			line-height: 2em;
+  			margin-top: 10px;
+  			width: auto;
+		}
+
+		@media screen and (max-width: 580px){
+			border-bottom: 1px solid $altBorderColor;
+			height: 3em;
+			line-height: 3em;
+		}
+
+		a {
+			color: $navLinkColor;
+
+			&:hover, &:focus, &:active {
+				color: $navLinkHover;
+				text-decoration: none;
+			}
+		}
+
+		#v65-modalCart {
+			@media screen and (min-width: 581px){
+				float: right;
+				position: static;
+			}
+		}
+
+		#v65-modalCartDropdown {
+			@media screen and (min-width: 581px){
+				top: 2em;
+			}
+
+			@media screen and (max-width: 580px){
+				top: 3em;
+			}
+		}
+
+		.v65-yourAccount, .v65-editProfile {
+			border-color: $altBorderColor;
+
+			@media screen and (min-width: 581px){
+				margin-top: 7px;
+				width: auto;
+			}
+		}
+
+		.v65-login, .v65-logout {
+			border-color: $altBorderColor;
+
+			@media screen and (min-width: 581px){
+				margin: 7px 50px 0 0;
+				width: auto;
+			}
+		}
+
+		.v65-login, .v65-logout, .v65-yourAccount, .v65-editProfile {
+			@media screen and (max-width: 580px){
+				height: 3em;
+				line-height: 3em;
+			}
+
+			@media screen and (max-width: 355px){
+				line-height: 1;
+  				padding-top: 7px;
+			}
+		}	
+	}
+
+	.logo{
+		background:{
+			image: image-url($logo);
+			position: top center;
+			repeat: no-repeat;
+		}
+		background-size: contain;
+		display: block;
+		float: left;
+		height: 140px;
+		margin: 0.25em 0;
+		position: relative;
+		width: 260px;
+
+		@media screen and (max-width: 580px){
+			height: 103px;
+			width: 190px;
+		}
+
+		@media screen and (max-width: 400px){
+			margin-left: 12px;
+		}
+
+		&.errorLogo{
+			float: none;
+		}
+
+		@media screen and (-webkit-min-device-pixel-ratio: 1.5),	(min-device-pixel-ratio: 1.5){
+			background-image: image-url($logo-retina);
+		}
+	}

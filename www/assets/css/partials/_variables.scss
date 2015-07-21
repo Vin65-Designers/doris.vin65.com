@@ -1,0 +1,89 @@
+// ================================= //
+// Global // 
+// ================================= //
+$arapey: 'Arapey', serif;	
+$cardo: 'Cardo', serif;
+$montserrat: 'Montserrat', sans-serif;
+
+// Global Variables
+$fontFamily: $montserrat;
+$headingFontFamily: $arapey;
+
+
+@mixin gradient($color1, $color2){
+	background-color: $color1;
+	background-image: -webkit-linear-gradient(top, $color1, $color2);
+	background-image: -moz-linear-gradient(top, $color1, $color2);
+	background-image: -ms-linear-gradient(top, $color1, $color2);
+	background-image: -o-linear-gradient(top, $color1, $color2);
+	background-image: linear-gradient(top, $color1, $color2);
+}
+
+$white: #fff;
+$offWhite: #f1f1f1;
+$lightGrey: #afafaf;
+$grey: #575757;
+$darkGrey: #202020;
+$offBlack: #111;
+$black: #000;
+
+$green: #609174;
+$gold:  #ac9065;
+$beige: #918575;
+$yellow: #ccb956;
+$red: #991b20;
+
+$fontColor: #747474;
+
+// Heading Colors
+$headingFontColor: $black; // Default Heading Font Color
+$headerFontColor: $black; // Font Color outside the container
+$headerFontColorHover: $black; // Hover font color outside the container
+
+$leftNavSelected: $fontColor;
+
+
+// =================================== //
+// Themes // 
+// =================================== //
+
+@import 'themes/themeSettings_default';
+// @import 'themes/themeSettings_black';
+// @import 'themes/themeSettings_purple';
+// @import 'themes/themeSettings_grey';
+
+// ==================================== // 
+
+
+@mixin boxSizing{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin transition{
+	-ms-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.transition {
+	-ms-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.hideText{
+	overflow:hidden;
+	text-indent:100%;
+	white-space:nowrap;
+	
+	a{
+		display:block;
+		height:100%;
+	}
+}

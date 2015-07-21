@@ -1,0 +1,53 @@
+// ================================= //
+// Purple and Yellow // 
+// ================================= //
+
+// Logo Settings
+$logo: 'logo-white.png';
+$logo-retina: 'logo-white@2x.png';
+
+$mainBgImage: url(../images/purple-bg.jpg);
+$altBgImage: #f7f7f7;
+$altBorderColor: #454559;
+$borderColor: #e5e5e4;
+$primaryColor: $yellow;
+$secondaryColor: $beige;
+
+$overlayImage: url(../images/beige-overlay.png);
+$overlayColor: rgba(145, 133, 117, 0.75);
+
+$modalBg: #2d2d2d;
+
+$mobileIcon: $secondaryColor;
+$mobileBg: rgba(45, 45, 45, 0.85);
+$linkColor: $secondaryColor;
+
+// Navigation Colors
+$navLinkColor: $lightGrey; 
+$altNavColor: $white;
+$navLinkHover: $white;
+$navSelected: $white;
+$subNavBgImage: url(../images/light-overlay.png);
+$subNavBg: rgba(255,255,255,0.45);
+$subNavLinkColor: $darkGrey; 
+$subNavBorder: $borderColor;
+
+$imageBgColor: #D2D2D2;
+
+$eventBg: $mainBgImage;
+$eventFontColor: $navLinkColor;
+
+// Footer Colors
+$footerBg: $mainBgImage;
+$footerBorderColor: $altBorderColor;
+$footerColor: $lightGrey;
+$footerLink: $lightGrey;
+$footerLinkHover: $white;
+$legalColor: #818181;
+
+// Buttons
+$mainButtonColor: $primaryColor;
+$mainButtonHover: darken($mainButtonColor, 5%);
+
+$altButtonColor: #B6B6B6;
+$altButtonHover: darken($altButtonColor, 10%);
