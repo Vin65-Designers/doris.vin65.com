@@ -613,11 +613,24 @@
 	#v65-checkCartSummaryMoreOptions, 
 	#v65-checkoutCartSummaryMini {
 		font-size: 13px;
+		float: none;
 		margin: 0 2%;
 		width: 96%;
 	}
 
-	#v65-couponFormWrapper legend, #v65-giftCardFormWrapper legend {
+	#v65-pointsGainedOnOrder {
+		border-bottom: 1px solid #ccc;
+		border-top: 1px solid #ccc;
+		margin: 0.5em 0 1em;
+		font-size: 1em;
+		padding: 0.5em 0;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	#v65-couponFormWrapper legend, #v65-giftCardFormWrapper legend, #v65-loyaltyPointsFormWrapper legend {
 		font-size: 20px;
 		margin-bottom: 5px;
 	}
@@ -631,6 +644,16 @@
 		height: 2.7em;
 		line-height: 2.7em;
 		width: 60% !important;
+
+		@media screen and (min-width: 581px){
+			height: 2em;
+			line-height: 2em;
+		}
+	}
+
+	#v65-LoyaltyPoints {
+		height: 2.7em;
+		line-height: 2.7em;
 
 		@media screen and (min-width: 581px){
 			height: 2em;
@@ -658,4 +681,38 @@
 
 .v65-rowOverline td {
 	border-color: #c8c8c8;
+}
+
+#v65-loyaltyPointsFormWrapper div.v65-loyaltyPointsInputBox,
+#v65-loyaltyPointsFormWrapper div.v65-loyaltyPointsDollarValue {
+	padding: 0 0 10px 0;
+	margin-right: 3%;
+
+	@media screen and (max-width: 450px){
+		width: 47%;
+	}
+}
+
+.v65-loyaltyPointsInputBoxWrapper .v65-loyaltyPointsInputBox {
+	@media screen and (min-width: 451px){
+		width: 135px;
+	}
+}
+
+#v65-loyaltyPointsFormWrapper {
+	@media screen and (max-width: 450px){
+		button.modalBtn {
+			clear: left;
+			display: block;
+		}
+	}
+		
+	input {
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	div {
+		font-size: 13px;
+	}
 }

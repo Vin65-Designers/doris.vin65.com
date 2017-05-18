@@ -100,7 +100,7 @@
 		margin-bottom: 2px;
 	}
 
-	input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea {
+	input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea, input[type='number'] {
 		@include boxSizing;
 		background-color: #fff;
 		border: 1px solid #D7D7D7;
@@ -162,7 +162,7 @@
 	}
 }
 
-input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea {
+input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea, input[type='number'] {
 	@include boxSizing;
 	background-color:  #fff;
 	border: 1px solid #D7D7D7;

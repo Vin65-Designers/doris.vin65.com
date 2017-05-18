@@ -56,6 +56,7 @@ header.primary{
 
 	#user-tools {
 		font-size: 13px;
+		width: auto;
 
 		.icon-bag, .icon-head {
 			color: $secondaryColor;
@@ -84,10 +85,21 @@ header.primary{
 			}
 		}
 
+		.v65-pointsBalance {
+			display: inline-block;
+			padding-right: 1em;
+
+			@media screen and (max-width: 580px){
+				display: none;
+			}
+		}
+
 		#v65-modalCart {
+			position: static;
+
 			@media screen and (min-width: 581px){
-				float: right;
-				position: static;
+				display: inline-block;
+				padding-left: 1em;
 			}
 		}
 
@@ -120,6 +132,10 @@ header.primary{
 		}
 
 		.v65-login, .v65-logout, .v65-yourAccount, .v65-editProfile {
+			@media screen and (min-width: 581px){
+				width: auto;
+			}		
+	
 			@media screen and (max-width: 580px){
 				height: 3em;
 				line-height: 3em;

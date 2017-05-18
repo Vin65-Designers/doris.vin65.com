@@ -29,8 +29,9 @@
 		
 		<div class="wideWrapper">
 			<div id="user-tools">
-				<cf_modalCart>	
+				<cf_points>
 				<cf_login>
+				<cf_modalCart>	
 			</div><!--/user-tools-->
 
 			<h1 class="logo hideText">

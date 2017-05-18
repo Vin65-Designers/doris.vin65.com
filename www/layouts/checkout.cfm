@@ -27,9 +27,6 @@
 	<header class="primary v65-group">
 		
 		<div class="wideWrapper">
-			<div id="user-tools">
-
-			</div><!--/user-tools-->
 
 			<h1 class="logo hideText">
 				<a href="/" accesskey="h"><cf_websiteName></a>
