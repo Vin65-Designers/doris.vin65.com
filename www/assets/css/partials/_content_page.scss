@@ -96,12 +96,12 @@
 	background:{
 		repeat: no-repeat;
 		position: center;
+		size: cover;
 	}
 	min-height: 250px;
 	position: relative;
 
 	@media screen and (min-width: 581px){
-		background-size: cover;
 		min-height: 400px;
 	}
 }
@@ -266,7 +266,7 @@
 
 	.v65-CalendarDay {
 		border: 0;
-		color: #6B6B6B;
+		color: #5a5a5a;
 		font-size: 0.8em;
 	}
 
@@ -302,6 +302,10 @@
 		size: 1.1em;
 	}
 	margin: 3em 0;
+}
+
+#v65-CalendarTable .v65-CalendarDay {
+    color: #5a5a5a;
 }
 
 // ============================= //
@@ -359,5 +363,21 @@
 			display: table;
 			clear: both;
 		}
+	}
+}
+
+// ============================= //
+// Recipes //
+// ============================= //
+
+.v65-recipe-drilldown-right {
+	width: 300px;
+	
+	@media screen and (min-width: 961px){
+		width: 400px;
+	}
+
+	@media screen and (max-width: 580px){
+		font-size: 0.9em;
 	}
 }

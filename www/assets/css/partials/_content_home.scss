@@ -17,16 +17,13 @@
 	background:{
 		position: center;
 		repeat: no-repeat;
+		size: cover;
 	}
 	border-bottom: 1px solid $borderColor;
 	min-height: 130px;
 
 	@media screen and (min-width: 1401px){
 		padding: 15em 3em;
-	}
-
-	@media screen and (min-width: 581px){
-		background-size: cover;
 	}
 
 	@media screen and (min-width: 581px) and (max-width: 1400px){

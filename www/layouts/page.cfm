@@ -1,10 +1,12 @@
 <cfoutput> <!DOCTYPE html>
 <!--[if lte IE 9]><html class="ie no-canvas"><![endif]-->
 <!--[if gt IE 9]><html><![endif]-->
+
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
-	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<cf_metaTags>
 
@@ -39,7 +41,7 @@
 
 			<div class="menu-icon"><span></span></div>
 
-			<nav class="mainMenu" id="main-menu">
+			<nav class="mainMenu" id="main-menu" aria-label="Main Menu">
 				<cf_layoutHeaderNav depth="2">
 			</nav>
 		</div>
@@ -47,8 +49,8 @@
 
 	<cf_contentBlock group="Page Banner">
 	
-	<section class="content pageContent v65-group">
-		<a class="backToTop" href="##"><i class="icon-small-up"></i></a>
+	<section class="content pageContent v65-group" aria-label="Main Content">
+		<a class="backToTop" href="##"><span class="icon-small-up"></span></a>
 		<div class="wideWrapper v65-group">
 			<article class="page">
 				<cf_mainContent>
@@ -68,7 +70,7 @@
 					<cf_customFile file="/v65html/_social.html">
 				</ul>
 
-				<nav>
+				<nav aria-label="Footer Menu">
 					<cf_layoutFooterNav>
 				</nav>
 
@@ -77,7 +79,7 @@
 				</div>
 
 				<div class="footerBand">
-					<i class="icon-swirl"></i>
+					<span class="icon-swirl"></span>
 				</div>
 			</div>
 				
@@ -87,7 +89,7 @@
 		</div>
 	</footer>
 
-	<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js">
+		<cf_js files="/assets/js/scripts.js,/assets/js/track-focus.min.js,/assets/nivo/jquery.nivo.slider.pack.js,/assets/js/invertcolours.js">
 
 	<cf_vin65GlobalFooterAssets>
 
