@@ -43,11 +43,15 @@ $footerBorderColor: #494949;
 $footerColor: $white;
 $footerLink: $white;
 $footerLinkHover: $white;
-$legalColor: #767676;
+$legalColor: #afabab;
 
 // Buttons
 $mainButtonColor: $primaryColor;
 $mainButtonHover: darken($mainButtonColor, 5%);
 
-$altButtonColor: #B6B6B6;
+$altButtonColor: #6f6f6f;
 $altButtonHover: darken($altButtonColor, 10%);
+
+.upcomingEvents .v65-event-upcoming-event .v65-event-upcoming-event-date .month {
+    color: #bbab96;
+}

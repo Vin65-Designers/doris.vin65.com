@@ -197,11 +197,7 @@
 			})  
 		},
 		videoFormatting : function(){
-			$('iframe').each(function(){
-				if($("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com']")){
-					$(this).wrap('<div class="videoWrapper"></div>');
-				}
-			})
+			$("iframe[src*='//player.vimeo.com'], iframe[src*='//www.youtube.com']").wrap('<div class="videoWrapper"></div>');
 		},
 		eventFormatting : function(){
 

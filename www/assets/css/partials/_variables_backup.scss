@@ -22,18 +22,18 @@ $headingFontFamily: $arapey;
 $white: #fff;
 $offWhite: #f1f1f1;
 $lightGrey: #afafaf;
-$grey: #575757;
+$grey: #575757; 
 $darkGrey: #202020;
 $offBlack: #111;
 $black: #000;
 
-$green: #528064;
+$green: #609174;
 $gold:  #ac9065;
-$beige: #73695c;
+$beige: #918575;
 $yellow: #ccb956;
 $red: #991b20;
 
-$fontColor: #6b6b6b;
+$fontColor: #747474;
 
 // Heading Colors
 $headingFontColor: $black; // Default Heading Font Color
@@ -87,19 +87,3 @@ $leftNavSelected: $fontColor;
 		height:100%;
 	}
 }
-
-/*Focus CSS*/
-.focus--keyboard, a:focus, button:focus, input:focus, select:focus, textarea:focus, .slick-list:focus {
- 
-    background-color: rgba(8, 95, 185,.05);
-    outline: 2px solid rgb(8, 95, 185) !important;
-    z-index: 1 !important;
-   }
-
-
-.focus--mouse, a.focus--mouse:focus, button.focus--mouse:focus, input.focus--mouse:focus, select.focus--mouse:focus, textarea.focus--mouse:focus, .slick-list.focus--mouse:focus {
-  border-color: none;
-  box-shadow: none;
-  background-color: rgba(8, 95, 185,.0);;
-  outline:none !important;
-  }

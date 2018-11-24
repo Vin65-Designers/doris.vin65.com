@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <!--[if lte IE 9]><html class="ie no-canvas"><![endif]-->
 <!--[if gt IE 9]><html><![endif]-->
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
-	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<v65:metaTags></v65:metaTags>
 
@@ -41,7 +42,7 @@
 
 			<div class="menu-icon"><span></span></div>
 
-			<nav class="mainMenu" id="main-menu">
+			<nav class="mainMenu" id="main-menu" aria-label="Main Menu">
 				<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
 			</nav>
 		</div>
@@ -49,8 +50,8 @@
 
 	<v65:contentBlock group="Page Banner"></v65:contentBlock>
 	
-	<section class="content pageContent v65-group">
-		<a class="backToTop" href="#"><i class="icon-small-up"></i></a>
+	<section class="content pageContent v65-group" aria-label="Main Content">
+		<a class="backToTop" href="#"><span class="icon-small-up"></span></a>
 		<div class="wideWrapper">
 			<div class="blogContent">
 				<v65:mainContent></v65:mainContent>
@@ -79,7 +80,7 @@
 					<v65:customFile file="/v65html/_social.html"></v65:customFile>
 				</ul>
 
-				<nav>
+				<nav aria-label="Footer Menu">
 					<v65:layoutFooterNav></v65:layoutFooterNav>
 				</nav>
 
@@ -88,7 +89,7 @@
 				</div>
 
 				<div class="footerBand">
-					<i class="icon-swirl"></i>
+					<span class="icon-swirl"></span>
 				</div>
 			</div>
 				
