@@ -29,9 +29,7 @@
 		
 		<div class="wideWrapper">
 
-			<h1 class="logo hideText">
-				<a href="/" accesskey="h"><cf_websiteName></a>
-			</h1>
+			<cf_logo>
 
 			<nav class="mainMenu" id="main-menu" aria-label="Main Menu">
 
@@ -50,7 +48,7 @@
 		<div class="wideWrapper v65-group">
 			<div class="upperFooter v65-group">
 				<ul class="socialIcons">
-					<cf_customFile file="/v65html/_social.html">
+					<cf_socialMediaLinks>
 				</ul>
 
 				<nav aria-label="Footer Menu">
@@ -67,12 +65,13 @@
 			</div>
 				
 			<div class="legalInformation">
+				<p><cf_footerInfo></p>
 				<p><span class="copyright"><cf_copyright></span><cf_vin65Accolade></p>
 			</div>
 		</div>
 	</footer>
 
-	<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js">
+	<cf_js files="/assets/js/scripts.js,/assets/js/track-focus.min.js,/assets/nivo/jquery.nivo.slider.pack.js">
 
 	<cf_vin65GlobalFooterAssets>
 
