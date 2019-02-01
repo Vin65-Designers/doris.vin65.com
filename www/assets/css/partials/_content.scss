@@ -315,13 +315,14 @@ input[type='text'], input[type='password'], input[type='username'], input[type='
 
 		@media screen and (max-width: 1000px){
 			.content {
-				bottom: 6.5em;
-			}
+				bottom: 6.5em; 
+			} 
 		}
 	}
 
 
 }
+
 
 /* ----- a. Homepage Styles ----- */
 @import 'content_home';

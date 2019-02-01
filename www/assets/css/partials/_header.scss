@@ -41,9 +41,9 @@ header.primary{
 	}
 
 	.headroom--not-top {
-		.logo {
-			width: 165px;
-			height: 89px;
+		.v65-logo {
+			width: 165px !important;
+			height: 89px !important;
 		}
 
 		.mainMenu {
@@ -148,34 +148,20 @@ header.primary{
 		}	
 	}
 
-	.logo{
-		background:{
-			image: image-url($logo);
-			position: top center;
-			repeat: no-repeat;
-		}
-		background-size: contain;
-		display: block;
+	.v65-logo{
 		float: left;
-		height: 140px;
-		margin: 0.25em 0;
-		position: relative;
-		width: 260px;
+		margin: 0.25em 0 !important;
 
 		@media screen and (max-width: 580px){
-			height: 103px;
-			width: 190px;
+			height: 103px !important;
+			width: 190px !important;
 		}
 
 		@media screen and (max-width: 400px){
-			margin-left: 12px;
+			margin: 0.25em 0 .25em 12px !important;
 		}
 
 		&.errorLogo{
 			float: none;
-		}
-
-		@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){ 
-			background-image: image-url($logo-retina);
 		}
 	}

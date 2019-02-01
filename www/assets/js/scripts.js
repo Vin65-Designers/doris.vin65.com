@@ -225,7 +225,7 @@
 			});
 		},
 		headerAnimation : function(){
-			$('.logo, .mainMenu').addClass('transition');
+			$('.v65-logo, .mainMenu').addClass('transition');
 
 			if($(window).width() > 900){				
 				var myElement = document.querySelector("header");
@@ -240,16 +240,6 @@
 				});
 				headroom.init();
 			}
-
-			$(window).resize(function(){
-				var headerHeight = $('header').height();
-
-				if($(window).width() > 900){
-					$('body').css('margin-top', headerHeight);
-				}else{
-					$('body').css('margin-top', 0);
-				}
-			})
 		},
 		matchHeights : function(){
 		    $('.homepageProductGroup, .blogPosts').matchHeight();
