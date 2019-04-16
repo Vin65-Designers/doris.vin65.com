@@ -15,7 +15,7 @@
 	<cf_vin65GlobalAssets>
 
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Arapey:400italic,400' rel='stylesheet' type='text/css'>
-	<cf_css files="/assets/css/screen.min.css">
+	<cf_css files="/assets/slick/slick-winedirect.css,/assets/slick/slick-theme-winedirect.css,/assets/css/screen.min.css">
 	
 	<!--[if lt IE 9]>
 		<script src="/assets/js/html5shiv-printshiv.js"></script>
@@ -81,7 +81,7 @@
 		</div>
 	</footer>
 
-	<cf_js files="/assets/js/scripts.js,/assets/js/track-focus.min.js,/assets/nivo/jquery.nivo.slider.pack.js">
+	<cf_js files="/assets/slick/slick-winedirect.js,/assets/js/scripts.js,/assets/js/track-focus.min.js">
 
 	<cf_vin65GlobalFooterAssets>
 
