@@ -25,7 +25,6 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-
 @import 'magnific-popup.css';
 article,
 aside,
@@ -156,8 +155,8 @@ dfn {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
 }
 
@@ -338,8 +337,7 @@ html input[disabled] {
  */
 input[type=checkbox],
 input[type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -353,6 +351,7 @@ input[type=radio] {
 input[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
+  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
@@ -542,165 +541,14 @@ table {
   content: "";
 }
 
-/*
- * jQuery Nivo Slider v3.0.1
- * http://nivo.dev7studios.com
- *
- * Copyright 2012, Dev7studios
- * Free to use and abuse under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- */
-/* The Nivo Slider styles */
-.nivoSlider {
-  position: relative;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  background: #fff url(../nivo/loading.gif) no-repeat 50% 50%;
-}
-
-.nivoSlider img {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.nivo-main-image {
-  display: block !important;
-  position: relative !important;
-  width: 100% !important;
-}
-
-/* If an image is wrapped in a link */
-.nivoSlider a.nivo-imageLink {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  z-index: 6;
-  display: none;
-  cursor: hand;
-  background-color: #fff;
-  filter: alpha(opacity=0);
-  /*non ie*/
-  opacity: 0;
-}
-
-/* The slices and boxes in the Slider */
-.nivo-slice {
-  display: block;
-  position: absolute;
-  z-index: 5;
-  height: 100%;
-  top: 0;
-}
-
-.nivo-box {
-  display: block;
-  position: absolute;
-  z-index: 5;
-  overflow: hidden;
-}
-
-.nivo-box img {
-  display: block;
-}
-
-/* Caption styles */
-.nivo-caption {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  background: #000;
-  color: #fff;
-  width: 100%;
-  z-index: 8;
-  padding: 5px 10px;
-  opacity: 0.8;
-  overflow: hidden;
-  display: none;
-  -moz-opacity: 0.8;
-  filter: alpha(opacity=8);
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
-}
-
-.nivo-caption p {
-  padding: 5px;
-  margin: 0;
-}
-
-.nivo-caption a {
-  display: inline !important;
-}
-
-.nivo-html-caption {
-  display: none;
-}
-
-/* Direction nav styles (e.g. Next & Prev) */
-.nivo-directionNav a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url(../nivo/arrows.png) no-repeat;
-  text-indent: -9999px;
-  border: 0;
-  position: absolute;
-  top: 45%;
-  z-index: 9;
-  cursor: pointer;
-}
-
-a.nivo-prevNav {
-  left: 15px;
-}
-
-a.nivo-nextNav {
-  background-position: -30px 0px;
-  right: 15px;
-}
-
-/* Control nav styles (e.g. 1,2,3...) */
-.nivo-controlNav {
-  text-align: center;
-  padding: 15px 0;
-}
-
-.nivo-controlNav a {
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  background-color: #B2B2B2;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  color: transparent;
-  border: 0;
-  margin: 0 12px;
-  cursor: pointer;
-}
-.nivo-controlNav a:hover {
-  background-color: #616161;
-  background-color: rgba(0, 0, 0, 0.63);
-}
-
-.nivo-controlNav a.active {
-  background-color: #616161;
-  background-color: rgba(0, 0, 0, 0.63);
-}
-
 .upcomingEvents .v65-event-upcoming-event .v65-event-upcoming-event-date .month {
   color: #bbab96;
 }
 
 .transition {
+  -ms-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -724,8 +572,7 @@ a.nivo-nextNav {
 
 .focus--mouse, a.focus--mouse:focus, button.focus--mouse:focus, input.focus--mouse:focus, select.focus--mouse:focus, textarea.focus--mouse:focus, .slick-list.focus--mouse:focus {
   border-color: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   background-color: rgba(8, 95, 185, 0);
   outline: none !important;
 }
@@ -921,6 +768,9 @@ header.primary {
 }
 @media screen and (min-width: 921px) {
   header.primary {
+    -ms-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     position: fixed;
@@ -1090,6 +940,7 @@ header.primary {
 @media screen and (max-width: 920px) {
   .mainMenu {
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.45);
     background: rgba(255, 255, 255, 0.95);
@@ -1110,6 +961,8 @@ header.primary {
 }
 @media screen and (max-width: 919px) {
   .mainMenu {
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
   }
@@ -1154,6 +1007,9 @@ header.primary {
   }
 }
 .mainMenu ul ul {
+  -ms-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: url(../images/light-overlay.png);
@@ -1296,6 +1152,7 @@ header.primary {
 /* ----- b. Sub Menu ----- */
 .subMenu {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 6em 3% 2em 1%;
 }
@@ -1371,6 +1228,8 @@ header.primary {
   height: 2px;
   position: relative;
   width: 36px;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   -webkit-transform: translate3d(0, 0, 0);
@@ -1381,6 +1240,8 @@ header.primary {
   background-color: #73695c;
   height: 2px;
   width: 36px;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   -webkit-transform: translate3d(0, 0, 0);
@@ -1397,12 +1258,18 @@ header.primary {
   height: 0;
 }
 .menu-icon.on span:before {
+  -moz-transform: rotate(45deg) translate(0.5em, 0.4em);
+  -ms-transform: rotate(45deg) translate(0.5em, 0.4em);
+  -o-transform: rotate(45deg) translate(0.5em, 0.4em);
   -webkit-transform: rotate(45deg) translate(0.5em, 0.4em);
   transform: rotate(45deg) translate(0.5em, 0.4em);
   top: -25px;
   left: -2px;
 }
 .menu-icon.on span:after {
+  -moz-transform: rotate(-45deg) translate(0.45em, -0.35em);
+  -ms-transform: rotate(-45deg) translate(0.45em, -0.35em);
+  -o-transform: rotate(-45deg) translate(0.45em, -0.35em);
   -webkit-transform: rotate(-45deg) translate(0.45em, -0.35em);
   transform: rotate(-45deg) translate(0.45em, -0.35em);
   top: 23px;
@@ -1474,6 +1341,9 @@ header.primary {
 }
 
 .overlay {
+  -ms-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: url(../images/dark-overlay.png);
@@ -1523,6 +1393,7 @@ header.primary {
 }
 .v65-form input[type=text], .v65-form input[type=password], .v65-form input[type=username], .v65-form input[type=tel], .v65-form input[type=email], .v65-form textarea, .v65-form input[type=number], #v65-memberFormWrapper input[type=text], #v65-memberFormWrapper input[type=password], #v65-memberFormWrapper input[type=username], #v65-memberFormWrapper input[type=tel], #v65-memberFormWrapper input[type=email], #v65-memberFormWrapper textarea, #v65-memberFormWrapper input[type=number] {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #fff;
   border: 1px solid #D7D7D7;
@@ -1534,6 +1405,7 @@ header.primary {
 }
 .v65-form select, #v65-memberFormWrapper select {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #fff;
   background-image: url(../images/select-d.jpg);
@@ -1541,8 +1413,7 @@ header.primary {
   background-position: top right;
   border-radius: 0;
   border: 1px solid #D7D7D7;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1582,6 +1453,7 @@ header.primary {
 
 input[type=text], input[type=password], input[type=username], input[type=tel], input[type=email], textarea, input[type=number] {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #fff;
   border: 1px solid #D7D7D7;
@@ -1662,6 +1534,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 .mfp-fade.mfp-bg {
   opacity: 0;
   -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
 }
 
@@ -1679,6 +1552,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 .mfp-fade.mfp-wrap .mfp-content {
   opacity: 0;
   -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
 }
 
@@ -1710,12 +1584,18 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 }
 @media screen and (min-width: 581px) {
   .ie .contentSection a:hover .image {
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 }
 @media screen and (min-width: 581px) {
   .ie .homepageImage:hover .image {
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
@@ -1741,6 +1621,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 
 .homepageBanner {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -ms-behavior: url(backgroundsize.min.htc);
   behavior: url(backgroundsize.min.htc);
@@ -1810,6 +1691,9 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
   -webkit-font-smoothing: antialiased;
 }
 .homepageBanner .scrollDownArrow {
+  -ms-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: url(../images/light-overlay.png);
@@ -1866,8 +1750,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 @media screen and (max-width: 800px) {
   .homepageProductGroup .productPhoto {
     float: none;
-    margin-right: 0;
-    width: 100%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 670px) {
@@ -1877,6 +1760,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 }
 .homepageProductGroup .boxBorder {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
   max-width: 750px;
@@ -1925,6 +1809,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 
 .thumbnailSlider {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: url(../images/white-bg.jpg);
   border: 15px solid #fff;
@@ -1941,7 +1826,11 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 
 .thumbnail-photo {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -ms-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -1950,6 +1839,9 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
   position: relative;
 }
 .thumbnail-photo .lightOverlay {
+  -ms-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: transparent;
@@ -1983,6 +1875,9 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 }
 @media screen and (min-width: 581px) {
   .homepageImage:after {
+    -ms-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     content: "";
@@ -2050,6 +1945,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 }
 .homepageImage .content {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
   padding: 5%;
@@ -2168,6 +2064,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 
 .blogPosts {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: #f7f7f7;
   padding: 4.5em 4% 1em;
@@ -2199,6 +2096,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 
 .subscribeSection {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: #f7f7f7;
   border-bottom: 1px solid #F4F4F4;
@@ -2360,6 +2258,9 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 }
 @media screen and (min-width: 581px) {
   .contentSection a:hover .image {
+    -ms-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
     -webkit-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2);
   }
@@ -2417,6 +2318,9 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
   left: 0;
   height: 100%;
   width: 100%;
+  -ms-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -2515,6 +2419,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 .v65-featureLeft, .v65-left,
 .v65-border {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -2680,6 +2585,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 }
 .topProductInfo .leftCol {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
   width: 25%;
@@ -2708,6 +2614,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 }
 .topProductInfo .rightCol {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
   margin: 9em 0 4em;
@@ -2734,6 +2641,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 
 .productDetails {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
   padding: 4em 0;
@@ -2858,6 +2766,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 }
 .v65-product-relatedProducts .v65-product-relatedProducts-product {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 3em 1%;
@@ -2878,6 +2787,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 
 .v65-club {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
   margin: 2em 2% 3em;
@@ -2956,8 +2866,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 
 .v65-quickView {
   border: 1px solid #C0C0C0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .v65-quickView .v65-product-tabs .last a,
 .v65-quickView .v65-quickView-close a {
@@ -3175,8 +3084,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
   }
 }
 #v65-loyaltyPointsFormWrapper input {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
 }
 #v65-loyaltyPointsFormWrapper div {
@@ -3258,6 +3166,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, 
 
 .blogFilterWrapper {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 1.1em;
   padding: 5em 3%;
@@ -3353,6 +3262,8 @@ button.defaultBtn, button.modalBtn, button.largeBtn {
   text-decoration: none;
   vertical-align: middle;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
   -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
 }
@@ -3373,6 +3284,8 @@ button.altBtn, button.altModalBtn, button.altLargeBtn {
   text-decoration: none;
   vertical-align: middle;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
   -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
 }
@@ -3403,6 +3316,8 @@ a.linkBtn, a.modalLinkBtn, a.largeLinkBtn {
   text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
   -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
 }
@@ -3434,6 +3349,8 @@ a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
   text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
   -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
 }
@@ -3502,6 +3419,9 @@ footer ul {
   }
 }
 footer a {
+  -ms-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #fff;
@@ -3595,3 +3515,5 @@ footer .legalInformation .copyright {
 .v65-socialMediaLinks span {
   padding: 0;
 }
+
+/*# sourceMappingURL=screen.min.css.map */
