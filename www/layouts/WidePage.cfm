@@ -29,6 +29,7 @@
 		
 		<div class="wideWrapper">
 			<div id="user-tools">
+				<cf_skipToContent targetID="mainContent">
 				<cf_points>
 				<cf_login>
 				<cf_modalCart>	
@@ -46,7 +47,7 @@
 
 	<cf_contentBlock group="Page Banner">
 
-	<article class="content wideContent v65-group">		
+	<article id="mainContent" class="content wideContent v65-group">		
 		<a class="backToTop" href="##"><span class="icon-small-up"></span></a>
 		
 		<div class="wideWrapper v65-group">
@@ -57,9 +58,7 @@
 	<footer>
 		<div class="wideWrapper v65-group">
 			<div class="upperFooter v65-group">
-				<ul class="socialIcons">
 					<cf_socialMediaLinks>
-				</ul>
 
 				<nav aria-label="Footer Menu">
 					<cf_layoutFooterNav>

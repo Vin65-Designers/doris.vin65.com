@@ -149,8 +149,22 @@ header.primary{
 	}
 
 	.v65-logo{
-		float: left;
-		margin: 0.25em 0 !important;
+		-webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background-position: top center !important;
+    display: block;
+    float: left;
+    margin: 0.7em;
+		overflow: visible !important;
+		
+			a{
+				-webkit-transition: none;
+				transition: none;
+				color: transparent;
+				font-size: 0;
+				display: block;
+				height: 100%;
+			}
 
 		@media screen and (max-width: 580px){
 			height: 103px !important;
@@ -164,4 +178,18 @@ header.primary{
 		&.errorLogo{
 			float: none;
 		}
+	}
+	
+.v65-logo a {
+  -webkit-transition: none;
+  transition: none;
+  color: transparent;
+  font-size: 0;
+  display: block;
+  height: 100%;
+}
+	
+	#v65-skipToContent a:focus{
+		left: -4px !important;
+		top: 132px !important;
 	}

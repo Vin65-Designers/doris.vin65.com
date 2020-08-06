@@ -47,9 +47,7 @@
 	<footer>
 		<div class="wideWrapper v65-group">
 			<div class="upperFooter v65-group">
-				<ul class="socialIcons">
 					<cf_socialMediaLinks>
-				</ul>
 
 				<nav aria-label="Footer Menu">
 					<cf_layoutFooterNav>

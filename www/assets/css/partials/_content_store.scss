@@ -357,6 +357,15 @@
 			border-left: 0;
 			border-top: 0;
 		}
+		
+		.v65-product-photo a{
+			-webkit-transition: none;
+			transition: none;
+			color: transparent;
+			font-size: 0;
+			display: block;
+			height: 100%;
+		}
 
 		.v65-product-photo img {
 			max-height: 200px;
@@ -575,11 +584,10 @@
 	background-color: transparent;
 
 	@media screen and (min-width: 581px){
-		height: 29px;
+		height: 38px;
 	}
 
 	.icon-cross {
-		font-size: 1.5em;
 		line-height: 1.7;
 		padding: 5px;
 	}
@@ -593,6 +601,11 @@
 			text-align: center;
 			width: 90%;
 		}
+	}
+	
+	a.modalCrossButton{
+		overflow: visible;
+		font-size: 1.5em;
 	}
 }
 

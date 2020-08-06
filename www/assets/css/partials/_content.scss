@@ -297,6 +297,13 @@ input[type='text'], input[type='password'], input[type='username'], input[type='
 			transform: scale(1, 1);
 		}	
 	}
+	
+	.contentSection a {
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    width: 99%;
+}
 
 	.homepageImage:hover {
 		@media screen and (min-width: 581px){

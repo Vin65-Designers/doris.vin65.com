@@ -30,6 +30,7 @@
 		
 		<div class="wideWrapper">
 			<div id="user-tools">
+				<cf_skipToContent targetID="mainContent">
 				<cf_points>
 				<cf_login>
 				<cf_modalCart>	
@@ -47,7 +48,7 @@
 
 	<cf_contentBlock group="Homepage Banner">
 
-	<section class="content v65-group">
+	<section id="mainContent" class="content v65-group">
 		<a class="backToTop" href="##"><span class="icon-small-up"></span></a>
 		<a name="scrollDown"></a>
 		<div class="two-thirds">
@@ -90,9 +91,7 @@
 	<footer>
 		<div class="wideWrapper v65-group">
 			<div class="upperFooter v65-group">
-				<ul class="socialIcons">
-					<cf_socialMediaLinks>
-				</ul>
+					<cf_socialMediaLinks>				
 
 				<nav aria-label="Footer Menu">
 					<cf_layoutFooterNav>

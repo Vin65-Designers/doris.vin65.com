@@ -3,7 +3,7 @@
 	
 	<div id="v65-modalViel">&nbsp;</div>
 	
-	<div id="v65-modalContentWrapper">
+	<div id="v65-modalContentWrapper" role="dialog" aria-modal="true" aria-label="Subscribe">
 		
 		<div id="v65-modalContentHeader"><a href="javascript:vin65.modal.closeWindow()" class="modalCrossButton" aria-label="Close"><span class="icon-cross"></span></a></div>
 		
